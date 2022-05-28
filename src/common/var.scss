@@ -7,11 +7,11 @@
 /* extends
 -------------------------- */
 /*-------var-------*/
-$--ext-primary-text: #19a0ab !default;
-$--ext-primary-text2: #03c9d9 !default;
-$--ext-primary-color: #132230 !default;
-$--ext-primary-background-1: #132230 !default;
-$--ext-active-background: #0c161e !default;
+$--ext-primary-text: #fff !default;
+$--ext-primary-text2: #820b0f !default;
+$--ext-primary-color: #fff !default;
+$--ext-primary-background-1: #820b0f !default;
+$--ext-active-background: #ffb5b8 !default;
 $--ext-active-border: #dac77a !default;
 
 /* Transition
@@ -26,11 +26,11 @@ $--color-transition-base: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !defau
 /* Color
 -------------------------- */
 /// color|1|Brand Color|0
-$--color-primary: #49c7c3 !default;
+$--color-primary: #820b0f !default;
 /// color|1|Background Color|4
-$--color-white: #0c1620 !default;
+$--color-white: #fff !default;
 /// color|1|Background Color|4
-$--color-black: #000000 !default;
+$--color-black: #820b0f !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -59,13 +59,13 @@ $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 /// color|1|Font Color|2
-$--color-text-primary: #02757e !default;
+$--color-text-primary: #fff !default;
 /// color|1|Font Color|2
-$--color-text-regular: #01cad8 !default;
+$--color-text-regular: $--color-primary !default;
 /// color|1|Font Color|2
-$--color-text-secondary: #02d6e6 !default;
+$--color-text-secondary: #ffe1a0 !default;
 /// color|1|Font Color|2
-$--color-text-placeholder: #00eeff !default;
+$--color-text-placeholder: #ccc !default;
 /// color|1|Border Color|3
 $--border-color-base: #1a3149 !default;
 /// color|1|Border Color|3
@@ -77,7 +77,7 @@ $--border-color-extra-light: #1d3b5e !default;
 
 // Background
 /// color|1|Background Color|4
-$--background-color-base: #1d3c5f !default;
+$--background-color-base: #ffe1a0 !default;
 
 /* Link
 -------------------------- */
@@ -408,16 +408,16 @@ $--notification-group-margin-right: 8px !default;
 /// fontSize||Font|1
 $--notification-content-font-size: $--font-size-base !default;
 /// color||Color|0
-$--notification-content-color: $--color-text-regular !default;
+$--notification-content-color: $--ext-primary-text2 !default;
 /// fontSize||Font|1
 $--notification-title-font-size: 16px !default;
 /// color||Color|0
-$--notification-title-color: $--color-text-primary !default;
+$--notification-title-color: $--ext-primary-text2 !default;
 
 /// color||Color|0
 $--notification-close-color: $--color-text-secondary !default;
 /// color||Color|0
-$--notification-close-hover-color: $--color-text-regular !default;
+$--notification-close-hover-color: $--ext-primary-text2 !default;
 
 /// color||Color|0
 $--notification-success-icon-color: $--color-success !default;
@@ -637,7 +637,7 @@ $--dialog-content-font-size: 14px !default;
 $--dialog-font-line-height: $--font-line-height-primary !default;
 /// padding||Spacing|3
 $--dialog-padding-primary: 20px !default;
-$--dialog-color-title-text: $--ext-primary-text2;
+$--dialog-color-title-text: $--ext-primary-text;
 
 /* Table
 -------------------------- */
